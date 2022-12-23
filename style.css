@@ -630,6 +630,10 @@ video {
   margin-right: 0.5rem;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .mt-1 {
   margin-top: 0.25rem;
 }
@@ -640,10 +644,6 @@ video {
 
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
 }
 
 .mt-10 {
@@ -1322,6 +1322,10 @@ body {
 }
 
 @media (min-width: 640px) {
+  .sm\:hidden {
+    display: none;
+  }
+
   .sm\:w-1\/2 {
     width: 50%;
   }
@@ -1383,6 +1387,10 @@ body {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
   }
 
   .lg\:block {

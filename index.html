@@ -7,6 +7,7 @@
     <title>Portfolio Tailwind</title>
     <link rel="icon" href="dist\img\icon\WEB LOGO br.png" type="image/gif" sizes="16x16" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tambahanCss.css" />
 
     <script>
       if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
@@ -53,7 +54,7 @@
                 <li class="group">
                   <a href="#contact" class="mx-8 flex py-2 text-base text-dark group-hover:text-primary dark:text-white">Contact</a>
                 </li>
-                <li class="group mt-3 flex items-center pl-8 lg:mt-0">
+                <!-- <li class="group mt-3 flex items-center pl-8 lg:mt-0">
                   <div class="flex">
                     <span class="mr-2 text-sm text-slate-500">light</span>
                     <input type="checkbox" class="hidden" id="dark-toggle" />
@@ -64,6 +65,17 @@
                     </label>
                     <span class="mr-2 text-sm text-slate-500">dark</span>
                   </div>
+                </li> -->
+
+                <li class="group mt-3 flex items-center pl-8 lg:mt-0">
+                  <!-- toggle dari template uiverse.io -->
+                  <span class="mr-2 text-sm text-slate-500">light</span>
+                  <label for="dark-toggle" class="switch">
+                    <input type="checkbox" id="dark-toggle" />
+                    <span class="slider"></span>
+                  </label>
+                  <span class="ml-2 text-sm text-slate-500">dark</span>
+                  <!-- toggle dari template uiverse.io -->
                 </li>
               </ul>
             </nav>
@@ -91,10 +103,11 @@
               class="rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
               >Contact Me</a
             >
+            <div class="sm:hidden"><br /></div>
             <a
               href="I Putu Gede Bayu Raditya Pratama_CV.pdf"
               download=""
-              class="ml-2 rounded-full border-2 border-primary py-3 px-8 text-base font-semibold text-primary transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg"
+              class="rounded-full border-2 border-primary py-3 px-8 text-base font-semibold text-primary transition duration-300 ease-in-out hover:opacity-80 hover:shadow-lg lg:ml-2"
               >Download CV</a
             >
           </div>
