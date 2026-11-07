@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bayu Raditya | UI/UX Designer & Full Stack Developer</title>
     <meta name="description" content="Portfolio of Bayu Raditya — UI/UX Designer & Full Stack Developer based in Bali. Web development, company profile, and government applications." />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Bayu Raditya | UI/UX Designer & Full Stack Developer" />
+    <meta property="og:description" content="Portfolio of Bayu Raditya — web development, company profile, and government applications. Based in Bali." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://bayuraditya.github.io/" />
+    <meta property="og:image" content="https://bayuraditya.github.io/fotobayu.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Bayu Raditya | UI/UX Designer & Full Stack Developer" />
+    <meta name="twitter:description" content="Portfolio of Bayu Raditya — web development, company profile, and government applications. Based in Bali." />
+    <meta name="twitter:image" content="https://bayuraditya.github.io/fotobayu.png" />
     <link rel="icon" href="dist/img/icon/WEB LOGO br.png" type="image/png" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="tambahanCss.css" />
@@ -442,13 +453,14 @@
             <p class="text-md font-medium text-secondary md:text-lg"></p>
           </div>
         </div>
-        <form action="">
+        <form id="contact-form" action="">
           <div class="mx-auto w-full lg:w-2/3">
             <div class="mb-8 w-full px-4">
               <label for="name" class="text-base font-bold text-primary">Name</label>
               <input
                 type="text"
                 id="name"
+                required
                 class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
@@ -457,6 +469,7 @@
               <input
                 type="email"
                 id="email"
+                required
                 class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               />
             </div>
@@ -464,12 +477,13 @@
               <label for="message" class="text-base font-bold text-primary">Message</label>
               <textarea
                 id="message"
+                required
                 class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
               ></textarea>
             </div>
             <div class="mb-8 w-full px-4">
-              <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
-                Send
+              <button type="submit" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">
+                Send via WhatsApp
               </button>
             </div>
           </div>

@@ -53,3 +53,14 @@ if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.match
 } else {
   darkToggle.checked = false;
 }
+
+//form contact kirim ke WhatsApp
+const contactForm = document.querySelector("#contact-form");
+contactForm.addEventListener("submit", function (e) {
+  e.preventDefault();
+  const name = document.querySelector("#name").value.trim();
+  const email = document.querySelector("#email").value.trim();
+  const message = document.querySelector("#message").value.trim();
+  const text = encodeURIComponent(`Halo Bayu! Saya ${name} (${email})\n\n${message}`);
+  window.open(`https://wa.me/6285706264055?text=${text}`, "_blank");
+});
